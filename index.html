@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self Finance Tracker</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="intro">
+    <p> 
+      <strong>DISCLAIMER:</strong> So yeah, every month I start feeling rich — with all new resolution (is it resolution or something else) like, <em>"This time, I’m gonna save money"</em><br/>
+      But but as usual somehow, I end up shopping unnecessary stuff (probably not hehe), grabbing snacks a lot to be specific, and oh, that late-night canteen attack...<br/>
+      By the month, I am no less than a beggar crying for 10 rs,<br/>
+      That’s why I made this Pocket Money Tracker aka self finance tracker — to finally catch where my cash is sneaking off to.
+    </p>
+  </div>
+
+  <div class="container">
+    <h1>Self Finance Tracker</h1>
+    <div class="summary">
+      <div class="card balance">
+        <h2>Balance</h2>
+        <p id="balance">₹0.00</p>
+      </div>
+      <div class="card income">
+        <h2>Money In</h2>
+        <p id="budget">+₹0.00</p>
+      </div>
+      <div class="card expense">
+        <h2>Money Out</h2>
+        <p id="expenses">-₹0.00</p>
+      </div>
+    </div>
+
+    <form id="form">
+      <input type="text" id="desc" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount (₹)" required />
+      <select id="flow">
+        <option value="">Select Type</option>
+        <option value="in">Money Coming In</option>
+        <option value="out">Money Going Out</option>
+      </select>
+      <input type="text" id="category" placeholder="Category" />
+      <input type="text" id="note" placeholder="Note (optional)" />
+      <button type="submit" id="submitBtn">Add Transaction</button>
+    </form>
+
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

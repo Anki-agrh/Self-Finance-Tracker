@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #faf7f2;
+  color: #333;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  flex: 1;
+  padding: 1rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.balance {
+  background: #e0f7fa;
+}
+
+.income {
+  background: #e8f5e9;
+}
+
+.expense {
+  background: #fce4ec;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #ffb74d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #fb8c00;
+}
+
+#transaction-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#transaction-list li {
+  background: #fff3e0;
+  border-left: 5px solid #ff9800;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+#transaction-list li.expense {
+  border-left-color: #e91e63;
+  background: #fce4ec;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #e57373;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  background: #c62828;
+}
+
+.intro {
+  background: #fff9c4;
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  border-left: 6px solid #fbc02d;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+  border-radius: 4px;
+  user-select: none;
+}
